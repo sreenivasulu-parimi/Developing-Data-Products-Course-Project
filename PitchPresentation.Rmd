@@ -1,0 +1,46 @@
+---
+title: "Developing Data Products Course Project: Shiny Application and Reproducible Pitch"
+author: "Sreenivasulu Parimi"
+date: "July 7, 2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Application Overview
+
+This is BMTC (Bangalore Metropolitan Transport Corporation) route map presentation. This application helps to draw a route map of bmtc route numbers.
+
+## How it works?
+
+- This application written in Shiny which is a web application framework for R
+- The source code contains two files: **ui.R** and **server.R**
+- **ui.R** define UI for application that draws a bmtc route map
+- **server.R** define server logic required to draw a bmtc route map
+- This application leverages **BMTC Route Data** and **leaflet** for displaying the route map
+- The application is hosted on Rstudio's Shiny server in the cloud (Shinyapps.io)
+
+## Slide with Code/Output
+
+```{r cars, echo = TRUE}
+library(leaflet)
+#library(dplyr)
+bmtc_routes <- read.csv("bmtc_routes.csv", stringsAsFactors = FALSE)
+bmtc_300A <- bmtc_routes[bmtc_routes$route_no == "300A",]
+bmtc_300A_route_map <- leaflet() %>%
+      addTiles()
+bmtc_300A_route_map <- bmtc_300A_route_map %>%
+      addMarkers(
+            lat = as.numeric(bmtc_300A[3][[1]]),
+            lng = as.numeric(bmtc_300A[4][[1]]),
+            popup = as.character(bmtc_300A[2][[1]])
+      )
+bmtc_300A_route_map
+```
+
+## References
+
+* Application URL: 
+* Github Repository URL:
