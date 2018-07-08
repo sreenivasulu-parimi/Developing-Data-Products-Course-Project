@@ -42,5 +42,5 @@ bmtc_300A_route_map
 
 ## References
 
-* Application URL: 
-* Github Repository URL:
+* Application URL: https://sreenivasulu-parimi.shinyapps.io/bmtcApp/
+* Github Repository URL: https://github.com/sreenivasulu-parimi/Developing-Data-Products-Course-Project

@@ -1,0 +1,12 @@
+name: bmtcApp
+title: bmtcApp
+username:
+account: sreenivasulu-parimi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 376045
+bundleId: 1469935
+url: https://sreenivasulu-parimi.shinyapps.io/bmtcApp/
+when: 1531017185.59939
+asMultiple: FALSE
+asStatic: FALSE

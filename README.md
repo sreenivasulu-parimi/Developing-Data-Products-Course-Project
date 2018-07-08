@@ -1,6 +1,6 @@
 # Coursera Developing Data Products Course Project: Shiny Application and Reproducible Pitch
 
-Link on <a href="http://rpubs.com/parimi/402524" target="_blank">RPubs</a>
+Link on <a href="http://rpubs.com/parimi/402658" target="_blank">RPubs</a>
 
 ## Instructions
 
